@@ -4,11 +4,9 @@
       placeholder="search by book author or author" />
   </div>
   <div class="books">
-    <app-book></app-book>
-    <app-book></app-book>
-    <app-book></app-book>
-    <app-book></app-book>
-    <app-book></app-book>
-    <app-book></app-book>
+    <ng-container *ngFor="let book of books">
+      <app-book [book]="book"
+        (click)="onDetail(book)"></app-book>
+    </ng-container>
   </div>
 </div>

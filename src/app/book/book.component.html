@@ -10,7 +10,7 @@
     <span>
       {{ book.author }}
     </span>
-    <span>
+    <span *ngIf="book.publishedDate">
       {{ book.publishedDate | date:'yyyy-MM-dd' }}
     </span>
   </div>
