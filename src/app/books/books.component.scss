@@ -1,0 +1,19 @@
+:host {
+  .container {
+    margin: 16px;
+
+    .search {
+      margin: 0 8px;
+
+      >input[type="search"] {
+        width: 80%;
+      }
+    }
+
+    .books {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

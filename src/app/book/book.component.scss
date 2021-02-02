@@ -1,0 +1,20 @@
+:host {
+  .book-container {
+    font-size: 16px;
+    margin: 8px;
+    width: 160px;
+
+    .book-image>img {
+      width: 100%;
+    }
+
+    .book-title {
+      font-weight: 700;
+    }
+
+    .book-author-published-date {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

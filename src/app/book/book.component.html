@@ -1,1 +1,17 @@
-<p>book works!</p>
+<div class="book-container">
+  <div class="book-image">
+    <img [src]="book.imageUrl"
+      alt="book image">
+  </div>
+  <div class="book-title">
+    {{ book.title }}
+  </div>
+  <div class="book-author-published-date">
+    <span>
+      {{ book.author }}
+    </span>
+    <span>
+      {{ book.publishedDate | date:'yyyy-MM-dd' }}
+    </span>
+  </div>
+</div>
